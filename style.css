@@ -1,0 +1,408 @@
+body {
+    font-family: 'Grenze Gotisch', cursive;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/lined-paper.png');
+    background-blend-mode: multiply;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-padded {
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+}
+
+.bg-dark {
+    background-color: #2b2b2b;
+}
+
+#sobre-mim {
+    background-color: #38322c;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+    background-blend-mode: multiply;
+    border-top: 5px solid #5c4a3e;
+    border-bottom: 5px solid #5c4a3e;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+#projetos {
+    background-color: #2c2c2c;
+    background-image: url('https://www.transparenttextures.com/patterns/stone-wall.png');
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel Decorative', serif;
+    color: #deb887;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 3em;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #8b4513;
+    margin: 10px auto 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #deb887;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #ffd700;
+    transform: scale(1.02);
+}
+
+.btn-cta, .btn-project, .contact-btn {
+    display: inline-block;
+    background-color: #8b4513;
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border: 3px solid #5a2e0a;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.6);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    animation: pulse 2s infinite ease-in-out; 
+}
+
+.btn-cta:hover, .btn-project:hover, .contact-btn:hover {
+    background-color: #a0522d;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    animation: none; 
+}
+
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 3px 3px 8px rgba(0,0,0,0.6); }
+    50% { transform: scale(1.03); box-shadow: 5px 5px 15px rgba(0,0,0,0.8); }
+    100% { transform: scale(1); box-shadow: 3px 3px 8px rgba(0,0,0,0.6); }
+}
+
+.hero-section {
+    background: url('fundo.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/fundo.jpg');
+    background-size: cover, auto;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-section .container {
+    z-index: 1;
+}
+
+.profile-photo-container {
+    margin-bottom: 30px;
+    width: 100%; 
+    text-align: center; 
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #deb887;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    display: block;
+    margin: 0 auto; 
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: stretch; 
+}
+
+.about-text {
+    background-color: #383838;
+    padding: 35px;
+    border-radius: 10px;
+    border: 2px solid #4a4a4a;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.4), 0 5px 15px rgba(0,0,0,0.6);
+    background-image: url('https://www.transparenttextures.com/patterns/noisy-texture.png');
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 45%; 
+    box-sizing: border-box; 
+}
+
+.about-text .btn-cta.btn-secondary {
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.skills-grid {
+    background-color: #383838;
+    padding: 35px;
+    border-radius: 10px;
+    border: 2px solid #4a4a4a;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.4), 0 5px 15px rgba(0,0,0,0.6);
+    background-image: url('https://www.transparenttextures.com/patterns/noisy-texture.png');
+    background-blend-mode: multiply;
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 45%;
+    box-sizing: border-box; 
+}
+
+.skills-grid h3 {
+    color: #deb887;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.skills-grid ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-grid li {
+    background-color: #4f4f4f;
+    padding: 12px 18px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    border: 1px solid #6a6a6a;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+.skill-icon {
+    font-size: 1.4em;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.project-item {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 25px;
+    border: 2px solid #5a5a5a;
+    background-image: url('fundo.jpg');
+    background-blend-mode: multiply;
+}
+
+.project-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.9);
+}
+
+.project-image-carousel {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.project-image-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid #8b4513;
+}
+
+.project-image-carousel img.active {
+    opacity: 1;
+}
+
+.project-image-carousel img:not(:first-child) {
+    display: none;
+}
+
+.project-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn-project.btn-secondary, .btn-cta.btn-secondary {
+    background-color: #5a2e0a;
+    border-color: #3b1e07;
+}
+
+.btn-project.btn-secondary:hover, .btn-cta.btn-secondary:hover {
+    background-color: #6d3a12;
+}
+
+.contact-links {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 220px;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
+.contact-icon {
+    font-size: 1.8em;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+footer {
+    background-color: #131313;
+    color: #b0b0b0;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 0.95em;
+    border-top: 2px solid #2b2b2b;
+    background-image: url('fundo.jpg');
+    background-blend-mode: multiply;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    .hero-section {
+        height: 65vh;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text, .skills-grid {
+        max-width: 100%;
+        margin-bottom: 25px;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .about-text p {
+        text-align: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-btn {
+        width: 100%;
+    }
+
+    .skills-grid ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .section-padded {
+        padding: 50px 0;
+    }
+
+    .btn-cta, .btn-project, .contact-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .project-item img {
+        height: 180px;
+    }
+}
